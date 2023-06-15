@@ -1,0 +1,7 @@
+@import "slick-carousel/slick/slick-theme.css";
+@import "slick-carousel/slick/slick.css";
+
+.slick-slider {
+  background-color: transparent;
+  margin-top: 10rem;
+}
