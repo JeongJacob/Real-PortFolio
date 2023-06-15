@@ -1,14 +1,16 @@
-.wrapper {
+.wrapper__open {
   width: 100vw;
-  height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   position: absolute;
-  top: 0;
+  animation: overlayOpenMenu 0.8s ease-out forwards;
 }
 
-.wrapper::before {
-  background-color: white;
-  transition: all 2s;
+.wrapper__close {
+  width: 100vw;
+  background-color: #ffffff;
+  position: absolute;
+  overflow: hidden;
+  animation: overlayCloseMenu 0.8s ease-out forwards;
 }
 
 .container {
@@ -42,5 +44,23 @@
   to {
     width: 100%;
     background-color: black;
+  }
+}
+
+@keyframes overlayOpenMenu {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes overlayCloseMenu {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
   }
 }
