@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import menu from "@/app/components/styles/Menu.module.scss";
+import menu from "@/app/styles/Menu.module.scss";
 import { useMenuStore } from "@/store";
 import Link from "next/link";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import intro from "@/app/components/styles/Intro.module.scss";
+import intro from "@/app/styles/Intro.module.scss";
 
 const Intro = () => {
   return (
