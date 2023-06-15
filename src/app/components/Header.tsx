@@ -12,7 +12,7 @@ const Header = () => {
       {!onMenu ? (
         <IoMenuOutline className={header.menu__button} onClick={handleMenu} />
       ) : (
-        <IoCloseOutline className={header.menu__button} onClick={handleMenu} />
+        <IoCloseOutline className={header.close__button} onClick={handleMenu} />
       )}
     </header>
   );
