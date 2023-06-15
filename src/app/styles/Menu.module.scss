@@ -4,6 +4,7 @@
   background-color: #f9f9f9;
   position: absolute;
   top: 0;
+  z-index: 999;
 }
 
 .wrapper::before {
