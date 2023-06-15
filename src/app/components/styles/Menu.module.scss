@@ -1,0 +1,66 @@
+.wrapper__open {
+  width: 100vw;
+  background-color: #ffffff;
+  position: absolute;
+  animation: overlayOpenMenu 0.8s ease-out forwards;
+}
+
+.wrapper__close {
+  width: 100vw;
+  background-color: #ffffff;
+  position: absolute;
+  overflow: hidden;
+  animation: overlayCloseMenu 0.8s ease-out forwards;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poiret One", cursive;
+
+  p {
+    font-size: 40px;
+    margin: 1.5rem 0;
+    text-align: center;
+    transition: all 1s;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: black;
+      animation: fillBackground 0.4s ease-in-out;
+    }
+  }
+}
+
+@keyframes fillBackground {
+  from {
+    width: 0%;
+    background-color: black;
+  }
+  to {
+    width: 100%;
+    background-color: black;
+  }
+}
+
+@keyframes overlayOpenMenu {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes overlayCloseMenu {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
