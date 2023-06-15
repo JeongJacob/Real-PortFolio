@@ -1,1 +1,6 @@
 @import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap");
+
+body {
+  background-image: url("/noise-background.jpg");
+}
