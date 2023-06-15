@@ -1,12 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import header from "@/app/components/styles/Header.module.scss";
-import { IoMenuOutline } from "react-icons/io5";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
 const Header = () => {
+  const [onMenu, setOnMenu] = useState(false);
   return (
     <header className={header.wrapper}>
-      <IoMenuOutline cursor={"pointer"} className={header.menu__button} />
+      {!onMenu ? (
+        <IoMenuOutline
+          className={header.menu__button}
+          onClick={() => setOnMenu(true)}
+        />
+      ) : (
+        <IoCloseOutline
+          className={header.menu__button}
+          onClick={() => setOnMenu(false)}
+        />
+      )}
     </header>
   );
 };
