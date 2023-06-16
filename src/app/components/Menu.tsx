@@ -9,6 +9,9 @@ const Menu = () => {
   return (
     <nav className={onMenu ? menu.wrapper__open : menu.wrapper__close}>
       <div className={menu.container}>
+        <Link href="/" onClick={handleMenu}>
+          <p>Home</p>
+        </Link>
         <Link href="/profile" onClick={handleMenu}>
           <p>Profile</p>
         </Link>
