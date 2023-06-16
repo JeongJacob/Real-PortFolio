@@ -1,3 +1,5 @@
+@use "@/app/styles/animations/animations.module.scss";
+
 .wrapper {
   width: 100vw;
   height: 60px;
@@ -21,16 +23,4 @@
 
 .close__button {
   color: black;
-}
-
-@keyframes changeMenu {
-  0% {
-    scale: 0;
-  }
-  50% {
-    scale: 1.1;
-  }
-  100% {
-    scale: 1;
-  }
 }
