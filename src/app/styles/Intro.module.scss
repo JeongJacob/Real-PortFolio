@@ -1,7 +1,9 @@
+@use "@/app/styles/animations/animations.module.scss";
+
 .background {
   width: 100vw;
   height: 100vh;
-  animation: intro 2s ease-in;
+  animation: overlayIntro 2s ease-in;
 }
 
 .text__container {
@@ -31,67 +33,4 @@
   animation: text 6s ease-in;
   font-family: "Grandiflora One", serif;
   font-size: 20px;
-}
-
-@keyframes intro {
-  from {
-    display: block;
-    width: 100%;
-    background-color: white;
-  }
-  to {
-    display: block;
-    width: 0%;
-  }
-}
-
-@keyframes text {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes glitch {
-  2%,
-  64% {
-    transform: translate(1px, 0) skew(0deg);
-  }
-  4%,
-  60% {
-    transform: translate(-1px, 0) skew(0deg);
-  }
-  62% {
-    transform: translate(0, 0) skew(5deg);
-  }
-}
-
-@keyframes glitchTop {
-  2%,
-  64% {
-    transform: translate(1px, -1px);
-  }
-  4%,
-  60% {
-    transform: translate(-1px, 1px);
-  }
-  62% {
-    transform: translate(7px, -1px) skew(-13deg);
-  }
-}
-
-@keyframes glitchBotom {
-  2%,
-  64% {
-    transform: translate(-1px, 0);
-  }
-  4%,
-  60% {
-    transform: translate(-1px, 0);
-  }
-  62% {
-    transform: translate(-17px, 5px) skew(21deg);
-  }
 }
