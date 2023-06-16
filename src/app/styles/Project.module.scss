@@ -1,0 +1,115 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.number__container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 7rem;
+
+  button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(220, 220, 220);
+    height: 35px;
+    font-family: "Gowun Batang", serif;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  button:nth-child(1) {
+    border-right: 1px solid black;
+    animation: fadeDownText 2s ease-in-out;
+  }
+  button:nth-child(2) {
+    border-right: 1px solid black;
+    animation: fadeDownText 4s ease-in-out;
+  }
+  button:nth-child(3) {
+    animation: fadeDownText 5s ease-in-out;
+  }
+}
+
+.content__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  hr {
+    width: 90%;
+    border: 1px solid rgb(217, 217, 217);
+  }
+}
+
+.content__title {
+  margin: 2rem 0;
+  font-size: 36px;
+  color: white;
+  animation: fadeDownText 2s ease-in-out;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.content__image__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content__image {
+  background-size: cover;
+  animation: fadeUpImage 2s ease-in-out;
+}
+
+.content__moreinfo__btn {
+  cursor: pointer;
+  border: none;
+  font-family: "Gowun Batang", serif;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(59, 59, 59);
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+  animation: fadeUpImage 4s ease-in-out;
+  transition: all 1s;
+
+  &:hover {
+    background-color: rgb(86, 86, 86);
+    color: rgb(211, 211, 211);
+  }
+}
+
+@keyframes fadeDownText {
+  from {
+    position: relative;
+    top: -3rem;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUpImage {
+  from {
+    opacity: 0;
+    position: relative;
+    bottom: -3rem;
+  }
+  to {
+    opacity: 1;
+    position: relative;
+    bottom: 0;
+  }
+}
