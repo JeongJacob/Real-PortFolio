@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import slider from "@/app/styles/ImageSlider.module.scss";
 import "@/app/styles/slick.css";
 
-interface SliderProps {
+export interface SliderProps {
   image: string;
   caption: string;
 }
@@ -18,8 +19,8 @@ const ImageSlider = ({ SliderData }: { SliderData: SliderProps[] }) => {
     slidesToScroll: 1, // 스크롤 시 넘어가는 컨텐츠 수
     centerMode: true, // 현재 컨텐츠 가운데 정렬
     centerPadding: "15px", // 중앙 컨텐츠 padding 값
-    autoplay: false, // 자동 캐러셀
-    autoplaySpeed: 2000, // 자동 캐러셀 속도
+    autoplay: true, // 자동 캐러셀
+    autoplaySpeed: 5000, // 자동 캐러셀 속도
     draggable: true, // 드래그
     fade: false, // 사라졌다 나타나는 효과
     arrows: false, // 좌,우 버튼
@@ -40,7 +41,9 @@ const ImageSlider = ({ SliderData }: { SliderData: SliderProps[] }) => {
               height={400}
               className={slider.element__image}
             />
-            <h2 className={slider.element__caption}>{data.caption}</h2>
+            <div className={slider.element__caption__container}>
+              <p className={slider.element__caption}>{data.caption}</p>
+            </div>
           </div>
         ))}
     </Slider>
