@@ -34,3 +34,19 @@
   font-family: "Grandiflora One", serif;
   font-size: 20px;
 }
+
+@media screen and (min-width: 1024px) {
+  .text {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .text {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .text {
+    font-size: 35px;
+  }
+}
