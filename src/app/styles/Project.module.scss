@@ -63,9 +63,20 @@
   display: flex;
   justify-content: center;
 }
+
 .content__image {
   background-size: cover;
   animation: fadeUpImage 2s ease-in-out;
+
+  &:hover {
+    animation: hoverBigScale 1s infinite;
+  }
+}
+
+.content__moreinfo__btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .content__moreinfo__btn {
@@ -79,7 +90,7 @@
   border-radius: 10px;
   background-color: white;
   color: rgb(59, 59, 59);
-  width: 30%;
+  width: 120px;
   height: 50px;
   font-size: 20px;
   animation: fadeUpImage 4s ease-in-out;
@@ -173,5 +184,17 @@
     opacity: 1;
     position: relative;
     bottom: 0;
+  }
+}
+
+@keyframes hoverBigScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.02;
+  }
+  100% {
+    scale: 1;
   }
 }

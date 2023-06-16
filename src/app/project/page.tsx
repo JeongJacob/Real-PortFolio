@@ -11,6 +11,8 @@ export interface ProjectProps {
   skills: string[];
   skillName: string[];
   introduce: string;
+  link: string;
+  github: string;
 }
 
 const Project = () => {
