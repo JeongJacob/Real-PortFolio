@@ -18,9 +18,7 @@ const ProjectInfoModal = ({ projectData }: { projectData: ProjectProps }) => {
             </div>
           ))}
         </div>
-        <div className={project.modal__introduce__container}>
-          <p>{projectData.introduce}안녕하세요</p>
-        </div>
+        <p className={project.modal__introduce}>{projectData.introduce}</p>
         <button onClick={handleModal} className={project.modal__close__btn}>
           Close
         </button>
