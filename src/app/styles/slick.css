@@ -3,5 +3,11 @@
 
 .slick-slider {
   background-color: transparent;
-  margin-top: 10rem;
+  padding-top: 10rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .slick-slider {
+    display: flex;
+  }
 }
