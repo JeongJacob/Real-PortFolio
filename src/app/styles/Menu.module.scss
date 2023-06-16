@@ -9,11 +9,11 @@
 
 .wrapper__close {
   width: 100vw;
+  height: 0;
   background-color: #ffffff;
   position: absolute;
   z-index: 999;
   overflow: hidden;
-  animation: overlayCloseMenu 0.8s ease-out forwards;
 }
 
 .container {
@@ -56,14 +56,5 @@
   }
   to {
     height: 100%;
-  }
-}
-
-@keyframes overlayCloseMenu {
-  from {
-    height: 100%;
-  }
-  to {
-    height: 0%;
   }
 }
