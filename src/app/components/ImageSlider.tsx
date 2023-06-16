@@ -25,7 +25,7 @@ const ImageSlider = ({ SliderData }: { SliderData: SliderProps[] }) => {
     fade: false, // 사라졌다 나타나는 효과
     arrows: false, // 좌,우 버튼
     vertical: false, // 세로 캐러셀
-    initialSlide: 1, // 첫 컨텐츠 번호
+    initialSlide: 0, // 첫 컨텐츠 번호
     pauseOnFocus: true, // focus시 정지
     pauseOnHover: true, // hover시 정지
   };
@@ -33,7 +33,7 @@ const ImageSlider = ({ SliderData }: { SliderData: SliderProps[] }) => {
     <Slider {...settings}>
       {SliderData &&
         SliderData.map((data) => (
-          <div key={data.image}>
+          <div key={data.image} className={slider.container}>
             <Image
               src={data.image}
               alt={data.image}
