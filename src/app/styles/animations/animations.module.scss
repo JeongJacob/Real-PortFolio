@@ -81,7 +81,6 @@
   }
   to {
     width: 100%;
-    background-color: black;
   }
 }
 
@@ -95,16 +94,16 @@
 }
 
 @keyframes fadeDownText {
-    from {
-        position: relative;
-        top: -3rem;
-        opacity: 0;
-    }
-    to {
-        position: relative;
-        top: 0;
-        opacity: 1;
-    }
+  from {
+    position: relative;
+    top: -3rem;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes fadeDownImage {

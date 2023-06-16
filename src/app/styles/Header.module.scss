@@ -24,3 +24,9 @@
 .close__button {
   color: black;
 }
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+}

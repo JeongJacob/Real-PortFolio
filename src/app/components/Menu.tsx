@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import menu from "@/app/styles/Menu.module.scss";
 import { useMenuStore } from "@/store";
 import Link from "next/link";
+import menu from "@/app/styles/Menu.module.scss";
 
 const Menu = () => {
   const { onMenu, handleMenu } = useMenuStore();
   return (
-    <nav className={onMenu ? menu.wrapper__open : menu.wrapper__close}>
+    <nav className={onMenu ? menu.wrapper__open : menu.wrapper}>
       <div className={menu.container}>
         <Link href="/" onClick={handleMenu}>
           <p>Home</p>

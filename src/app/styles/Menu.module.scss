@@ -1,5 +1,14 @@
 @use "@/app/styles/animations/animations.module.scss";
 
+.wrapper {
+  width: 100vw;
+  height: 0;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+}
+
 .wrapper__open {
   width: 100vw;
   background-color: #ffffff;
@@ -7,15 +16,6 @@
   top: 0;
   z-index: 999;
   animation: overlayOpenMenu 0.8s ease-out forwards;
-}
-
-.wrapper__close {
-  width: 100vw;
-  height: 0;
-  background-color: #ffffff;
-  position: absolute;
-  z-index: 999;
-  overflow: hidden;
 }
 
 .container {
@@ -37,6 +37,36 @@
       color: white;
       background-color: black;
       animation: fillBackground 0.4s ease-in-out;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper,
+  .wrapper__open {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    overflow: visible;
+    background-color: transparent;
+    animation: opacityContent 6s ease-in-out forwards;
+  }
+
+  .container {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+
+    p {
+      color: rgb(240, 240, 240);
+
+      &:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        animation: fillBackground 0.4s ease-in-out;
+      }
     }
   }
 }
