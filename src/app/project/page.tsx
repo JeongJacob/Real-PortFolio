@@ -1,19 +1,21 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import project from "@/app/styles/Project.module.scss";
 import axios from "axios";
 import ProjectPreview from "../components/ProjectPreview";
+import { useTitleStore } from "@/store";
+import project from "@/app/styles/Project.module.scss";
 
 export interface ProjectProps {
-  name: string;
   title: string;
   image: string;
+  skills: string[];
+  skillName: string[];
   introduce: string;
 }
 
 const Project = () => {
   const [projectData, setProjectData] = useState<ProjectProps[]>([]);
-  const [onTitle, setOnTitle] = useState("");
+  const { onTitle, handleTitle } = useTitleStore();
   const [key, setKey] = useState(0);
 
   const getProjectData = () => {
@@ -38,7 +40,7 @@ const Project = () => {
     title: string
   ) => {
     e.preventDefault();
-    setOnTitle(title);
+    handleTitle(title);
     setKey((prevKey) => prevKey + 1);
   };
   return (
