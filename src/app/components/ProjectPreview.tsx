@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ProjectProps } from "../project/page";
 import project from "@/app/styles/Project.module.scss";
+import Link from "next/link";
 
 const ProjectPreview = ({ projectData }: { projectData: ProjectProps }) => {
   return (
@@ -17,7 +18,12 @@ const ProjectPreview = ({ projectData }: { projectData: ProjectProps }) => {
           className={project.content__image}
         />
       </div>
-      <button className={project.content__moreinfo__btn}>More Info</button>
+      <Link
+        href={`/project/${projectData.name}`}
+        className={project.content__moreinfo__btn}
+      >
+        More Info
+      </Link>
     </div>
   );
 };

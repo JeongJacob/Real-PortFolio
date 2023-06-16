@@ -5,6 +5,7 @@ import axios from "axios";
 import ProjectPreview from "../components/ProjectPreview";
 
 export interface ProjectProps {
+  name: string;
   title: string;
   image: string;
   introduce: string;

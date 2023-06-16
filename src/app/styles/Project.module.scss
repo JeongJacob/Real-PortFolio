@@ -19,7 +19,8 @@
     font-weight: 600;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: white;
     }
   }
@@ -69,6 +70,9 @@
 }
 
 .content__moreinfo__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   border: none;
   font-family: "Gowun Batang", serif;
