@@ -8,7 +8,7 @@ const Introduce = () => {
 
   const getIntroduceData = () => {
     const fetchData = async () => {
-      axios
+      await axios
         .get("/api/introduce")
         .then((res) => setIntroduceData(res.data))
         .catch((err) => console.error(err));
