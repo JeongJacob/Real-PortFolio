@@ -5,8 +5,7 @@ import { useMenuStore } from "@/store";
 import Link from "next/link";
 
 const Menu = () => {
-  const onMenu = useMenuStore((state) => state.onMenu);
-  const handleMenu = useMenuStore((state) => state.handleMenu);
+  const { onMenu, handleMenu } = useMenuStore();
   return (
     <nav className={onMenu ? menu.wrapper__open : menu.wrapper__close}>
       <div className={menu.container}>

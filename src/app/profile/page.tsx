@@ -1,6 +1,6 @@
 import React from "react";
-import profile from "@/app/styles/Profile.module.scss";
 import Image from "next/image";
+import profile from "@/app/styles/Profile.module.scss";
 
 const Profile = () => {
   return (

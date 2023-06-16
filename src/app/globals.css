@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Grandiflora+One&family=Poiret+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gowun+Batang&family=Grandiflora+One&family=Poiret+One&display=swap');
 body {
   background-image: url("/noise-background.jpg");
 }
