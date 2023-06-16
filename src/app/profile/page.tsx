@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import profile from "@/app/styles/Profile.module.scss";
+import Link from "next/link";
 
 const Profile = () => {
   return (
@@ -18,20 +19,24 @@ const Profile = () => {
           <p>010-9232-4007</p>
           <p>ja9cob7@gmail.com</p>
           <div className={profile.about__sns__container}>
-            <Image
-              src="/github.png"
-              alt="github"
-              width={30}
-              height={30}
-              className={profile.about__sns__github}
-            />
-            <Image
-              src="/velog.png"
-              alt="velog"
-              width={30}
-              height={30}
-              className={profile.about__sns__velog}
-            />
+            <Link href={"https://github.com/MINSE97"} target="blink">
+              <Image
+                src="/github.png"
+                alt="github"
+                width={30}
+                height={30}
+                className={profile.about__sns__github}
+              />
+            </Link>
+            <Link href={"https://velog.io/@alsgood4007"} target="blink">
+              <Image
+                src="/velog.png"
+                alt="velog"
+                width={30}
+                height={30}
+                className={profile.about__sns__velog}
+              />
+            </Link>
           </div>
         </div>
       </div>
