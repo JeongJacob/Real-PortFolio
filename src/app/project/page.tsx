@@ -47,10 +47,23 @@ const Project = () => {
   };
   return (
     <div className={project.container}>
-      <div className={project.number__container}>
-        <button onClick={(e) => onTitleHandler(e, "PIKCHA")}>PIKCHA</button>
-        <button onClick={(e) => onTitleHandler(e, "NerdNest")}>NerdNest</button>
-        <button onClick={(e) => onTitleHandler(e, "PortFolio")}>
+      <div className={project.title__container}>
+        <button
+          onClick={(e) => onTitleHandler(e, "PIKCHA")}
+          className={onTitle === "PIKCHA" ? project.title__active : ""}
+        >
+          PIKCHA
+        </button>
+        <button
+          onClick={(e) => onTitleHandler(e, "NerdNest")}
+          className={onTitle === "NerdNest" ? project.title__active : ""}
+        >
+          NerdNest
+        </button>
+        <button
+          onClick={(e) => onTitleHandler(e, "PortFolio")}
+          className={onTitle === "PortFolio" ? project.title__active : ""}
+        >
           PortFolio
         </button>
       </div>
