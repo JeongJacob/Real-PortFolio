@@ -28,9 +28,11 @@ const ProjectInfoModal = ({ projectData }: { projectData: ProjectProps }) => {
             <p className={project.modal__role__team__front}>
               {projectData.team[0]}
             </p>
-            <p className={project.modal__role__team__back}>
-              {projectData.team[1]}
-            </p>
+            {projectData.team[1] && (
+              <p className={project.modal__role__team__back}>
+                {projectData.team[1]}
+              </p>
+            )}
           </div>
           <div>
             <h3>팀 내 역할</h3>
