@@ -13,26 +13,25 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  animation: glitch 1s linear infinite;
-}
 
-.text__container:before {
-  animation: glitchTop 1.5s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-}
+  p {
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Grandiflora One", serif;
+    animation: glitch1 2.5s infinite;
+  }
+  p:nth-child(2) {
+    color: #67f3da;
+    animation: glitch2 2.5s infinite;
+  }
 
-.text__container:after {
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-}
-
-.text {
-  color: white;
-  animation: text 6s ease-in;
-  font-family: "Grandiflora One", serif;
-  font-size: 20px;
+  p:nth-child(3) {
+    color: #f16f6f;
+    animation: glitch3 2.5s infinite;
+  }
 }
 
 @media screen and (min-width: 1024px) {

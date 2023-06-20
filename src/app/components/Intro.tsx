@@ -6,7 +6,9 @@ const Intro = () => {
     <section>
       <div className={intro.background}>
         <div className={intro.text__container}>
-          <p className={intro.text}>Jacob&apos;s PortFolio</p>
+          <p>Jacob&apos;s PortFolio</p>
+          <p>Jacob&apos;s PortFolio</p>
+          <p>Jacob&apos;s PortFolio</p>
         </div>
       </div>
     </section>
