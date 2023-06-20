@@ -35,8 +35,8 @@ const ProjectInfoModal = ({ projectData }: { projectData: ProjectProps }) => {
           <div>
             <h3>팀 내 역할</h3>
             <p>
-              {projectData.myWork.map((work) => (
-                <p>{work}</p>
+              {projectData.myWork.map((work, idx) => (
+                <p key={idx}>{work}</p>
               ))}
             </p>
           </div>
