@@ -66,11 +66,13 @@
 
 @keyframes fadeDownImage {
   from {
-    margin-bottom: 24rem;
+    position: relative;
+    bottom: 12rem;
     opacity: 0;
   }
   to {
-    margin-bottom: 12rem;
+    position: relative;
+    bottom: 0;
     opacity: 1;
   }
 }
