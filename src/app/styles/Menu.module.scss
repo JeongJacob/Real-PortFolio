@@ -1,5 +1,4 @@
 @use "@/app/styles/animations/animations.module.scss";
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
 .wrapper {
   width: 100vw;
@@ -25,7 +24,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Poiret One", cursive;
 
   p {
     font-size: 40px;
@@ -33,6 +31,7 @@
     text-align: center;
     transition: all 1s;
     cursor: pointer;
+    font-family: "Poiret One", cursive;
 
     &:hover {
       color: white;
