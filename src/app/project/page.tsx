@@ -13,7 +13,7 @@ export interface ProjectProps {
   introduce: string;
   period: string;
   team: string;
-  work: string[] | string;
+  myWork: string[];
   link: string;
   github: string;
 }
