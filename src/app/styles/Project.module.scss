@@ -75,6 +75,8 @@
 }
 
 .content__image {
+  width: 250px;
+  height: 250px;
   animation: fadeUpImage 2s ease-in-out;
 
   &:hover {
@@ -113,9 +115,9 @@
   border-radius: 10px;
   background-color: white;
   color: rgb(59, 59, 59);
-  width: 120px;
-  height: 50px;
-  font-size: 18px;
+  width: 110px;
+  height: 40px;
+  font-size: 15px;
   animation: fadeUpImage 4s ease-in-out;
   transition: all 1s;
 
@@ -144,7 +146,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 80%;
+  height: 100%;
   color: rgb(56, 56, 56);
   font-family: "Gowun Batang", serif;
   background-color: rgb(255, 255, 255);
@@ -225,6 +227,11 @@
     flex-direction: row;
   }
 
+  .content__image {
+    width: 300px;
+    height: 350px;
+  }
+
   .content__introduce__info__container {
     display: flex;
     flex-direction: column;
@@ -280,6 +287,7 @@
   .content__title {
     margin: 3rem 0;
   }
+
   .content__image {
     width: 450px;
     height: 500px;
@@ -315,8 +323,8 @@
     margin: 4rem 0;
   }
   .content__image {
-    width: 550px;
-    height: 600px;
+    width: 500px;
+    height: 550px;
   }
 
   .content__introduce__info__container {
