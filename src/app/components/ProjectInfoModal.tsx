@@ -18,7 +18,24 @@ const ProjectInfoModal = ({ projectData }: { projectData: ProjectProps }) => {
             </div>
           ))}
         </div>
-        <p className={project.modal__introduce}>{projectData.introduce}</p>
+        <div className={project.modal__role__container}>
+          <div>
+            <h3>프로젝트 기간</h3>
+            <p>{projectData.period}</p>
+          </div>
+          <div>
+            <h3>팀 구성</h3>
+            <p>{projectData.team}</p>
+          </div>
+          <div>
+            <h3>팀 내 역할</h3>
+            <p>
+              {projectData.myWork.map((work) => (
+                <p>{work}</p>
+              ))}
+            </p>
+          </div>
+        </div>
         <button onClick={handleModal} className={project.modal__close__btn}>
           Close
         </button>
