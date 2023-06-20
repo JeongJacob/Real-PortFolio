@@ -189,10 +189,22 @@
   }
 }
 
+.modal__role__team__front::before {
+  content: "FrontEnd: ";
+  color: rgb(83, 83, 181);
+  font-weight: bold;
+}
+.modal__role__team__back::before {
+  content: "BackEnd: ";
+  color: rgb(68, 175, 82);
+  font-weight: bold;
+}
+
 .modal__close__btn {
   @extend .content__moreinfo__btn;
   background-color: rgb(86, 86, 86);
   color: rgb(211, 211, 211);
+  margin: 0 !important;
 
   &:hover {
     background-color: white;
@@ -231,6 +243,33 @@
     height: 50px;
     margin-right: 2rem;
   }
+
+  .modal__skill__wrapper {
+    width: 90%;
+  }
+
+  .modal__skill__container {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .modal__role__container {
+    font-size: 20px;
+    line-height: 1.5rem;
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
 }
 @media screen and (min-width: 1440px) {
   .title__container {
@@ -251,6 +290,16 @@
 
     p {
       line-height: 1.5rem;
+    }
+  }
+
+  .modal__skill__container {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    p {
+      font-size: 18px;
     }
   }
 }
@@ -287,6 +336,27 @@
     height: 60px;
     font-size: 26px;
   }
+
+  .modal__skill__container {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .modal__role__container {
+    line-height: 2rem;
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 26px;
+    }
+  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -315,5 +385,25 @@
     width: 180px;
     height: 90px;
     font-size: 30px;
+  }
+
+  .modal__skill__container {
+    img {
+      width: 120px;
+      height: 120px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .modal__role__container {
+    line-height: 2.5rem;
+    h3 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 30px;
+    }
   }
 }

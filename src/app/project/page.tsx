@@ -12,7 +12,7 @@ export interface ProjectProps {
   skillName: string[];
   introduce: string;
   period: string;
-  team: string;
+  team: string[];
   myWork: string[];
   link: string;
   github: string;
