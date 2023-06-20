@@ -20,11 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gowun+Batang&family=Grandiflora+One&family=Nanum+Myeongjo&family=Poiret+One&display=swap"
-          as="font"
-          rel="preconnect"
-        ></link>
       </Head>
       <body className={inter.className}>
         <Header />
