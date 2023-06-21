@@ -20,10 +20,17 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: `Jacob's PortFolio`,
-    description:
-      "취뽀를 누구보다 강렬히 희망하는 프론트엔드 개발자 Jacob의 포트폴리오 사이트입니다!",
+    description: "Jacob's PortFolio 입니다.",
     url: "https://jacob97.vercel.app/",
-    images: [{ url: "/portfolio.png", width: 800, height: 600 }],
+    images: [
+      { url: "/portfolio.png", width: 800, height: 800 },
+      {
+        url: "/portfolio.png",
+        width: 1800,
+        height: 1600,
+        alt: "PortFolio",
+      },
+    ],
     type: "website",
   },
 };
