@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import ImageSlider, { SliderProps } from "@/app/components/ImageSlider";
 import axios from "axios";
-import introduce from "@/app/styles/Introduce.module.scss";
 
 const Introduce = () => {
   const [introduceData, setIntroduceData] = useState<SliderProps[]>([]);

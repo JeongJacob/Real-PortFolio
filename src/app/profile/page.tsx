@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import profile from "@/app/styles/Profile.module.scss";
 import Link from "next/link";
+import profile from "@/app/styles/Profile.module.scss";
 
 const Profile = () => {
   return (

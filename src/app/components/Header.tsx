@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import header from "@/app/styles/Header.module.scss";
 import { useMenuStore } from "@/store";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
+import header from "@/app/styles/Header.module.scss";
 
 const Header = () => {
   const onMenu = useMenuStore((state) => state.onMenu);
