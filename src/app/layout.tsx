@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "취뽀를 누구보다 강렬히 희망하는 프론트엔드 개발자 Jacob의 포트폴리오 사이트입니다!",
     url: "https://jacob97.vercel.app/",
-    images: { url: "/portfolio.png" },
+    images: [{ url: "/portfolio.png", width: 800, height: 600 }],
     type: "website",
   },
 };
