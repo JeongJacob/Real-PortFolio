@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     title: `Jacob's PortFolio`,
     description: "Jacob's PortFolio 입니다.",
     url: "https://jacob97.vercel.app/",
+    siteName: `Jacob's PortFolio`,
     images: [
       { url: "/ogImage.png", width: 800, height: 800 },
       {
