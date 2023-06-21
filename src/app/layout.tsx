@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import { Inter } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 import { Metadata } from "next";
 
@@ -23,9 +22,9 @@ export const metadata: Metadata = {
     description: "Jacob's PortFolio 입니다.",
     url: "https://jacob97.vercel.app/",
     images: [
-      { url: "/portfolio.png", width: 800, height: 800 },
+      { url: "/ogImage.png", width: 800, height: 800 },
       {
-        url: "/portfolio.png",
+        url: "/ogImage.png",
         width: 1800,
         height: 1600,
         alt: "PortFolio",
