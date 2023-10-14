@@ -2,7 +2,7 @@ import { create } from "zustand";
 
 interface MenuState {
   onMenu: boolean;
-  handleMenu: () => void;
+  handleMenu: (menu: boolean) => void;
 }
 interface TitleState {
   onTitle: string;
@@ -16,7 +16,7 @@ interface ModalState {
 
 export const useMenuStore = create<MenuState>((set) => ({
   onMenu: false,
-  handleMenu: () => set((state) => ({ onMenu: !state.onMenu })),
+  handleMenu: (menu: boolean) => set(() => ({ onMenu: menu })),
 }));
 
 export const useTitleStore = create<TitleState>((set) => ({
