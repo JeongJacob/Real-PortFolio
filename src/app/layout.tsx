@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import Menu from "./components/Menu";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import "./globals.css";
@@ -49,7 +48,6 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>
         <Header />
-        <Menu />
         {children}
       </body>
     </html>
