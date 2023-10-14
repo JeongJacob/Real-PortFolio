@@ -9,26 +9,36 @@ const Header = () => {
   const onMenu = useMenuStore((state) => state.onMenu);
   const handleMenu = useMenuStore((state) => state.handleMenu);
   return (
-    <header className={header.wrapper}>
-      {/* {!onMenu ? (
-        <IoMenuOutline className={header.menu__button} onClick={handleMenu} />
+    <header className={onMenu ? header.wrapper__open : header.wrapper}>
+      {!onMenu ? (
+        <IoMenuOutline
+          className={header.menu__button}
+          onClick={() => handleMenu(true)}
+        />
       ) : (
-        <IoCloseOutline className={header.close__button} onClick={handleMenu} />
-      )} */}
-        <div className={header.menu__container}>
-          <Link href="/" onClick={handleMenu}>
-            <p>HOME</p>
-          </Link>
-          <Link href="/profile" onClick={handleMenu}>
-            <p>PROFILE</p>
-          </Link>
-          <Link href="/skill" onClick={handleMenu}>
-            <p>SKILL</p>
-          </Link>
-          <Link href="/project" onClick={handleMenu}>
-            <p>PROJECTS</p>
-          </Link>
-        </div>
+        <IoCloseOutline
+          className={header.close__button}
+          onClick={() => handleMenu(false)}
+        />
+      )}
+      <div
+        className={
+          onMenu ? header.menu__container__open : header.menu__container
+        }
+      >
+        <Link href="/" onClick={() => handleMenu(false)}>
+          <p>HOME</p>
+        </Link>
+        <Link href="/contact" onClick={() => handleMenu(false)}>
+          <p>Contact</p>
+        </Link>
+        <Link href="/skill" onClick={() => handleMenu(false)}>
+          <p>SKILL</p>
+        </Link>
+        <Link href="/project" onClick={() => handleMenu(false)}>
+          <p>PROJECTS</p>
+        </Link>
+      </div>
     </header>
   );
 };
