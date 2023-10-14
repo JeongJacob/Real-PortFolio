@@ -30,7 +30,7 @@ const Header = () => {
           <p>HOME</p>
         </Link>
         <Link href="/contact" onClick={() => handleMenu(false)}>
-          <p>Contact</p>
+          <p>CONTACT</p>
         </Link>
         <Link href="/skill" onClick={() => handleMenu(false)}>
           <p>SKILL</p>
