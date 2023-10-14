@@ -29,8 +29,8 @@ const Header = () => {
         <Link href="/" onClick={() => handleMenu(false)}>
           <p>HOME</p>
         </Link>
-        <Link href="/profile" onClick={() => handleMenu(false)}>
-          <p>PROFILE</p>
+        <Link href="/contact" onClick={() => handleMenu(false)}>
+          <p>Contact</p>
         </Link>
         <Link href="/skill" onClick={() => handleMenu(false)}>
           <p>SKILL</p>
