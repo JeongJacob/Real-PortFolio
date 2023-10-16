@@ -1,6 +1,6 @@
 .roter__container {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 80px;
   transform-style: preserve-3d;
   animation: roter 17s linear infinite;
 }
@@ -29,36 +29,53 @@
 }
 
 .items:first-child {
-  transform: rotateY(calc(33deg * 1)) translateZ(180px);
+  transform: rotateY(calc(21deg * 1)) translateZ(180px);
 }
 .items:nth-child(2) {
-  transform: rotateY(calc(33deg * 2)) translateZ(180px);
+  transform: rotateY(calc(21deg * 2)) translateZ(180px);
 }
 .items:nth-child(3) {
-  transform: rotateY(calc(33deg * 3)) translateZ(180px);
+  transform: rotateY(calc(21deg * 3)) translateZ(180px);
 }
 .items:nth-child(4) {
-  transform: rotateY(calc(33deg * 4)) translateZ(180px);
+  transform: rotateY(calc(21deg * 4)) translateZ(180px);
 }
 .items:nth-child(5) {
-  transform: rotateY(calc(33deg * 5)) translateZ(180px);
+  transform: rotateY(calc(21deg * 5)) translateZ(180px);
 }
 .items:nth-child(6) {
-  transform: rotateY(calc(33deg * 6)) translateZ(180px);
+  transform: rotateY(calc(21deg * 6)) translateZ(180px);
 }
 .items:nth-child(7) {
-  transform: rotateY(calc(33deg * 7)) translateZ(180px);
+  transform: rotateY(calc(21deg * 7)) translateZ(180px);
 }
 .items:nth-child(8) {
-  transform: rotateY(calc(33deg * 8)) translateZ(180px);
+  transform: rotateY(calc(21deg * 8)) translateZ(180px);
 }
 .items:nth-child(9) {
-  transform: rotateY(calc(33deg * 9)) translateZ(180px);
+  transform: rotateY(calc(21deg * 9)) translateZ(180px);
 }
 .items:nth-child(10) {
-  transform: rotateY(calc(33deg * 10)) translateZ(180px);
+  transform: rotateY(calc(21deg * 10)) translateZ(180px);
 }
 .items:nth-child(11) {
-  transform: rotateY(calc(33deg * 11)) translateZ(180px);
+  transform: rotateY(calc(21deg * 11)) translateZ(180px);
 }
-
+.items:nth-child(12) {
+  transform: rotateY(calc(21deg * 12)) translateZ(180px);
+}
+.items:nth-child(13) {
+  transform: rotateY(calc(21deg * 13)) translateZ(180px);
+}
+.items:nth-child(14) {
+  transform: rotateY(calc(21deg * 14)) translateZ(180px);
+}
+.items:nth-child(15) {
+  transform: rotateY(calc(21deg * 15)) translateZ(180px);
+}
+.items:nth-child(16) {
+  transform: rotateY(calc(21deg * 16)) translateZ(180px);
+}
+.items:nth-child(17) {
+  transform: rotateY(calc(21deg * 17)) translateZ(180px);
+}
