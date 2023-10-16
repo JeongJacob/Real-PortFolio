@@ -1,6 +1,6 @@
-import MuiCard from "@/app/components/MuiCard";
+import MuiCard from "./MuiCard";
 import rotator from "@/app/styles/CardRotator.module.scss";
-import { SkillBodyT } from "../page";
+import { SkillBodyT } from "../skill/page";
 
 export default function CardRotator({ skill }: { skill: SkillBodyT[] }) {
   return (

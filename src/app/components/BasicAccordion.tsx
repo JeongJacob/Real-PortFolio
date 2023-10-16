@@ -4,7 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { SkillBodyT } from "../page";
+import { SkillBodyT } from "../skill/page";
 import Image from "next/image";
 import styled from "@emotion/styled";
 
