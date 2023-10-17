@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { SkillBodyT } from "../skill/page";
-import skill from "@/app/styles/Skill.module.scss";
+import roter from "@/app/styles/CardRotator.module.scss";
 
 export default function MuiCard(props: SkillBodyT) {
   return (
@@ -16,21 +16,21 @@ export default function MuiCard(props: SkillBodyT) {
           height="140"
           image={props.src}
           alt="green iguana"
-          className={skill.card__logo}
+          className={roter.card__logo}
         />
-        <CardContent className={skill.card__content}>
+        <CardContent className={roter.card__content}>
           <Typography
             gutterBottom
             variant="h5"
             component="div"
-            className={skill.card__element__title}
+            className={roter.card__element__title}
           >
             {props.title}
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
-            className={skill.card__element__body}
+            className={roter.card__element__body}
           >
             {props.body}
           </Typography>
