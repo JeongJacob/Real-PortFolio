@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import BasicAccordion from "../components/BasicAccordion";
+import CardRotator from "../components/CardRotator";
 import skill from "@/app/styles/Skill.module.scss";
-import CardRotator from "./components/CardRotator";
 
 export interface SkillBodyT {
   src: string;
@@ -18,36 +19,63 @@ interface SkillListT {
 
 export default function Skill() {
   const [skillData, setSkillData] = useState<SkillListT>();
+  const [concatSkillList, setConcatSkillList] = useState<SkillBodyT[]>();
+  const [isToggle, setIsToggle] = useState(false);
 
-  const getskillData = () => {
+  const getSkillData = () => {
     const fetchData = async () => {
       await axios
         .get("/api/skill")
-        .then((res) => setSkillData(res.data))
+        .then((res) => {
+          setSkillData(res.data);
+          setConcatSkillList([
+            ...res.data.frontSkillList,
+            ...res.data.communitySkillList,
+            ...res.data.trySkillList,
+          ]);
+        })
         .catch((err) => console.error(err));
     };
     fetchData();
   };
 
   useEffect(() => {
-    getskillData();
+    getSkillData();
   }, []);
 
   return (
     <div className={skill.wrapper}>
       <div className={skill.container}>
-        <div className={skill.front__container}>
-          <h1>FrontEnd Skill</h1>
-          {skillData && <CardRotator skill={skillData.frontSkillList} />}
-        </div>
-        <div className={skill.try__container}>
-          <h1>Try Skill</h1>
-          {skillData && <CardRotator skill={skillData.trySkillList} />}
-        </div>
-        <div className={skill.community__container}>
-          <h1>Community Skill</h1>
-          {skillData && <CardRotator skill={skillData.communitySkillList} />}
-        </div>
+        {!isToggle ? (
+          <div className={skill.rotator__skill__container}>
+            <h1>My Skill</h1>
+            {concatSkillList && <CardRotator skill={concatSkillList} />}
+          </div>
+        ) : (
+          <>
+            <div className={skill.front__container}>
+              <h1>FrontEnd Skill</h1>
+              {skillData &&
+                skillData.frontSkillList.map((frontSkill, idx) => (
+                  <BasicAccordion skill={frontSkill} key={idx} />
+                ))}
+            </div>
+            <div className={skill.try__container}>
+              <h1>Try Skill</h1>
+              {skillData &&
+                skillData.trySkillList.map((trySkill, idx) => (
+                  <BasicAccordion skill={trySkill} key={idx} />
+                ))}
+            </div>
+            <div className={skill.community__container}>
+              <h1>Community Skill</h1>
+              {skillData &&
+                skillData.communitySkillList.map((communitySkill, idx) => (
+                  <BasicAccordion skill={communitySkill} key={idx} />
+                ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

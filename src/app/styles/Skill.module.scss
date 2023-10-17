@@ -1,24 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+
 .wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(238, 238, 238, 0.845);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 145, 197, 0);
 }
 
 .container {
-  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.card__logo {
-  padding: 10px;
-  height: 100px;
-}
-
-.card__content {
-  display: none;
-}
-
+.rotator__skill__container,
 .front__container,
 .try__container,
 .community__container {
@@ -26,15 +23,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeDown 5s ease-in-out;
-}
+  animation: fadeDown 3s ease-in-out;
+  color: white;
 
-.try__container {
-  animation-duration: 10s;
+  h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-family: "Noto Serif KR", serif;
+  }
 }
-
-.community__container {
-  animation-duration: 15s;
+.rotator__skill__container {
+  margin-bottom: 10rem;
 }
 
 @keyframes fadeDown {
