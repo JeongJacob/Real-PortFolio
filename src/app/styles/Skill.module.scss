@@ -1,3 +1,4 @@
+@use "@/app/styles/animations/Animations.module.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
 
 .wrapper {
@@ -21,8 +22,6 @@
 }
 
 .toggle__container {
-  position: relative;
-  z-index: 10000;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -51,14 +50,4 @@
   animation: fadeDown 3s ease-in-out;
   color: white;
   margin-bottom: 2rem;
-}
-
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-5rem);
-  }
-  to {
-    opacity: 1;
-  }
 }
