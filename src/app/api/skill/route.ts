@@ -45,7 +45,7 @@ const skillData = {
     {
       src: "/redux.svg",
       title: "Redux",
-      body: "Store에 대한 개념을 알고 있으며 RTK를 이용하여 다양한 옵션을 사용할 수 있습니다.",
+      body: "Store에 대한 개념을 알고 작성 할 수 있으며 RTK를 이용하여 다양한 옵션을 사용할 수 있습니다.",
     },
 
     {
