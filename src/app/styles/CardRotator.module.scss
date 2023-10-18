@@ -1,0 +1,40 @@
+.roter__container {
+  width: 250px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: roter 45s linear infinite;
+}
+.roter__container:hover {
+  animation-play-state: paused;
+}
+@keyframes roter {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.items {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.items:hover img {
+  transform: scale(1.2);
+}
+.items img {
+  object-fit: contain;
+  transition: all 3s ease;
+}
+
+@for $i from 1 through 17 {
+  .items:nth-child(#{$i}) {
+    transform: rotateY(calc(21deg * #{$i})) translateZ(800px);
+  }
+}
+
+.card__logo {
+  padding: 10px;
+  height: 250px;
+}
