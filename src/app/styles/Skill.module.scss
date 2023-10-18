@@ -1,3 +1,4 @@
+@use "@/app/styles/animations/Animations.module.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
 
 .wrapper {
@@ -13,6 +14,7 @@
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+
   h1 {
     font-size: 30px;
     margin-bottom: 1rem;
@@ -21,13 +23,12 @@
 }
 
 .toggle__container {
-  position: relative;
-  z-index: 10000;
   width: 100%;
   display: flex;
   align-items: flex-end;
   color: white;
   margin-right: 1rem;
+  margin-top: 2rem;
 }
 
 .rotator__skill__container {
@@ -36,7 +37,6 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  animation: fadeDown 3s ease-in-out;
   margin-top: 4rem;
 }
 
@@ -48,17 +48,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeDown 3s ease-in-out;
   color: white;
   margin-bottom: 2rem;
 }
 
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-5rem);
-  }
-  to {
-    opacity: 1;
-  }
+.toggle__container,
+.rotator__skill__container,
+.front__container,
+.try__container,
+.community__container {
+  animation: fadeDown 3s ease-in-out;
 }
