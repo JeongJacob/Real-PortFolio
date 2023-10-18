@@ -3,12 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import BasicAccordion from "../components/BasicAccordion";
 import CardRotator from "../components/CardRotator";
-import {
-  FormGroup,
-  Stack,
-  Switch,
-  Typography,
-} from "@mui/material";
+import { FormGroup, Stack, Switch, Typography } from "@mui/material";
 import skill from "@/app/styles/Skill.module.scss";
 
 export interface SkillBodyT {
@@ -55,10 +50,7 @@ export default function Skill() {
         <FormGroup className={skill.toggle__container}>
           <Stack direction="row" spacing={1} alignItems="center">
             <Typography>3D</Typography>
-            <Switch
-              inputProps={{ "aria-label": "ant design" }}
-              onClick={() => setIsToggle(!isToggle)}
-            />
+            <Switch onClick={() => setIsToggle(!isToggle)} />
             <Typography>2D</Typography>
           </Stack>
         </FormGroup>
